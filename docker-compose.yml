@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: my-react:1.0
+    ports:
+      - "3000:80"
+    # volumes:
+    #   - .:/app
+    #   - /app/node_modules
+    # environment:
+    #   NODE_ENV: development
